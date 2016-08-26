@@ -12,9 +12,29 @@ body {
     color: @gray-light;
 }
 
-.about-text {
+#about h3.about-text {
     text-align: justify;
-    padding: 0 20px 0 20px;
+    padding: 20px 20px 20px 20px;
+    line-height: 1.5em;
+    font-size: 1.5em;
+}
+
+.terms-text {
+    color: #000000;
+    a {
+        color: #0000EE;
+    }
+    a:hover {
+        color: #0000EE;
+        text-decoration: underline;
+    }
+    a:active {
+        text-decoration: underline;
+        color: #0000AA;
+    }
+    a:visited {
+        color: #551A8B;
+    }
 }
 
 .text-primary {
@@ -265,6 +285,35 @@ section {
         padding: 150px 0;
     }
 }
+
+
+section#terms {
+    padding: 100px 0 10px 0;
+    h2.section-heading {
+        font-size: 40px;
+        letter-spacing: 4px;
+        font-weight: 200;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    h3.section-subheading {
+        font-size: 16px;
+        .serif-font;
+        text-transform: none;
+        /*font-style: italic;*/
+        font-weight: 400;
+        margin-bottom: 15px;
+    }
+}
+
+@media(min-width:768px) {
+    section#terms {
+        padding: 150px 0 15px 0;
+    }
+}
+
+
+
 
 // Services Section
 
@@ -651,6 +700,23 @@ footer {
         line-height: 40px;
         .heading-font;
         text-transform: none;
+        a {
+            color: #0000EE;
+        }
+        a:hover {
+            color: #0000EE;
+            text-decoration: underline;
+        }
+        a:active {
+            text-decoration: underline;
+            color: #0000AA;
+        }
+        a:visited {
+            color: #551A8B;
+        }
+        .active {
+            text-decoration: underline;
+        }
     }
 }
 

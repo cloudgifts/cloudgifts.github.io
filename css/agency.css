@@ -11,9 +11,28 @@ body {
 .text-muted {
   color: #777777;
 }
-.about-text {
+#about h3.about-text {
   text-align: justify;
-  padding: 0 20px 0 20px;
+  padding: 20px 20px 20px 20px;
+  line-height: 1.5em;
+  font-size: 1.5em;
+}
+.terms-text {
+  color: #000000;
+}
+.terms-text a {
+  color: #0000EE;
+}
+.terms-text a:hover {
+  color: #0000EE;
+  text-decoration: underline;
+}
+.terms-text a:active {
+  text-decoration: underline;
+  color: #0000AA;
+}
+.terms-text a:visited {
+  color: #551A8B;
 }
 .text-primary {
   color: #444444;
@@ -320,6 +339,29 @@ section h3.section-subheading {
 @media (min-width: 768px) {
   section {
     padding: 150px 0;
+  }
+}
+section#terms {
+  padding: 100px 0 10px 0;
+}
+section#terms h2.section-heading {
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 200;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+section#terms h3.section-subheading {
+  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: none;
+  /*font-style: italic;*/
+  font-weight: 400;
+  margin-bottom: 15px;
+}
+@media (min-width: 768px) {
+  section#terms {
+    padding: 150px 0 15px 0;
   }
 }
 .service-heading {
@@ -675,6 +717,23 @@ footer ul.quicklinks {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-transform: none;
+}
+footer ul.quicklinks a {
+  color: #0000EE;
+}
+footer ul.quicklinks a:hover {
+  color: #0000EE;
+  text-decoration: underline;
+}
+footer ul.quicklinks a:active {
+  text-decoration: underline;
+  color: #0000AA;
+}
+footer ul.quicklinks a:visited {
+  color: #551A8B;
+}
+footer ul.quicklinks .active {
+  text-decoration: underline;
 }
 ul.social-buttons {
   margin-bottom: 0;
